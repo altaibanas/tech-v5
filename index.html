@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تيك سيرف - خدمات التقنية وتطوير الويب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+       
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease;
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 15px); }
+            100% { transform: translate(0, -0px); }
+        }
+        .glow {
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <a href="index.html" class="flex items-center">
+                            <i class="fas fa-laptop-code text-2xl text-purple-600"></i>
+                            <span class="font-bold text-xl text-gray-800 mr-2">تيك سيرف</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-purple-600 font-semibold border-b-4 border-purple-600">الرئيسية</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">عن المتجر</a>
+                    <a href="shop.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">المدونة</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">تواصل معنا</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white">
+            <a href="index.html" class="block py-2 px-4 text-sm text-purple-600 bg-purple-50">الرئيسية</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-purple-50">عن المتجر</a>
+            <a href="shop.html" class="block py-2 px-4 text-sm hover:bg-purple-50">المتجر</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm hover:bg-purple-50">المدونة</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-purple-50">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">حلول تقنية متكاملة لتطوير أعمالك</h1>
+                    <p class="text-xl mb-8">نقدم خدمات تصميم وتطوير المواقع الإلكترونية والحلول التقنية المتكاملة لمساعدة شركتك على النمو في العصر الرقمي.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="shop.html" class="bg-white text-purple-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 glow">استعرض خدماتنا</a>
+                        <a href="contact.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-purple-600 font-bold py-3 px-6 rounded-full transition duration-300">اتصل بنا</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="floating">
+                        <img src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png" alt="تطوير الويب" class="w-full max-w-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">خدماتنا التقنية</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم مجموعة واسعة من الخدمات التقنية لتلبية احتياجات عملك في العصر الرقمي</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- بطاقة الخدمة 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">تطوير المواقع</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير مواقع ويب احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات.</p>
+                        <a href="#" class="text-purple-600 font-semibold flex items-center">
+                            <span>اعرف المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- بطاقة الخدمة 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shopping-cart text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">المتاجر الإلكترونية</h3>
+                        <p class="text-gray-600 mb-4">بناء متاجر إلكترونية متكاملة مع أنظمة دفع آمنة وإدارة المخزون والعملاء.</p>
+                        <a href="#" class="text-blue-600 font-semibold flex items-center">
+                            <span>اعرف المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- بطاقة الخدمة 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden service-card border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-mobile-alt text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">تطبيقات الجوال</h3>
+                        <p class="text-gray-600 mb-4">تصميم وتطوير تطبيقات الجوال لأنظمة iOS و Android باستخدام أحدث التقنيات.</p>
+                        <a href="#" class="text-green-600 font-semibold flex items-center">
+                            <span>اعرف المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_1280.png" alt="مميزاتنا" class="w-full max-w-lg rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">لماذا تختار تيك سيرف؟</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-bolt text-purple-600"></i>
+                                </div>
+                            </div>
+                            <div class="mr-4">
+                                <h4 class="text-xl font-semibold text-gray-800">تسليم سريع</h4>
+                                <p class="text-gray-600 mt-2">نضمن تسليم مشاريعك في الوقت المحدد مع الحفاظ على أعلى معايير الجودة.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-headset text-blue-600"></i>
+                                </div>
+                            </div>
+                            <div class="mr-4">
+                                <h4 class="text-xl font-semibold text-gray-800">دعم فني متواصل</h4>
+                                <p class="text-gray-600 mt-2">فريق دعم فني متاح على مدار الساعة لمساعدتك في حل أي مشكلة تواجهك.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-shield-alt text-green-600"></i>
+                                </div>
+                            </div>
+                            <div class="mr-4">
+                                <h4 class="text-xl font-semibold text-gray-800">حلول آمنة</h4>
+                                <p class="text-gray-600 mt-2">نضمن أقصى درجات الأمان لبياناتك ومشاريعك باستخدام أحدث تقنيات الحماية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العملاء -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">ماذا يقول عملاؤنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">آراء عملائنا هي دليل نجاحنا وتميزنا في تقديم الخدمات التقنية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- رأي العميل 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">م</div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-gray-800">محمد أحمد</h4>
+                            <p class="text-gray-600 text-sm">مدير تسويق</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"لقد ساعدنا فريق تيك سيرف في تطوير متجرنا الإلكتروني وكانت النتيجة مذهلة. زادت مبيعاتنا بنسبة 40% بعد إطلاق المتجر."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- رأي العميل 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">س</div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-gray-800">سارة خالد</h4>
+                            <p class="text-gray-600 text-sm">صاحبة متجر</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"تجربة رائعة مع فريق تيك سيرف. موقعي الآن متجاوب مع جميع الأجهزة ومعدل التحويل ارتفع بشكل ملحوظ. أنصح بالتعامل معهم."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- رأي العميل 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">ع</div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-gray-800">علي محمد</h4>
+                            <p class="text-gray-600 text-sm">مدير شركة</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"حصلنا على تطبيق جوال رائع من تيك سيرف. التصميم جميل والأداء سريع. فريق العمل محترف ومتعاون."</p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold mb-2">150+</div>
+                    <p class="text-purple-200">مشروع مكتمل</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">95%</div>
+                    <p class="text-purple-200">عملاء سعداء</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <p class="text-purple-200">خبير تقني</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">5+</div>
+                    <p class="text-purple-200">سنوات خبرة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاتصال السريع -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl font-bold mb-4">هل أنت مستعد لبدء مشروعك الرقمي؟</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">اتصل بنا الآن واحصل على استشارة مجانية حول مشروعك التقني</p>
+                <a href="contact.html" class="bg-white text-purple-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 inline-block glow">اتصل بنا الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
+                        <span class="font-bold text-xl mr-2">تيك سيرف</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نقدم حلولاً تقنية متكاملة لتطوير أعمالك في العصر الرقمي.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">عن المتجر</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition duration-300">المتجر</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطوير المواقع</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">المتاجر الإلكترونية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطبيقات الجوال</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">استضافة الويب</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التسويق الرقمي</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">اتصل بنا</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-2 text-purple-400"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-2 text-purple-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-2 text-purple-400"></i>
+                            <span>info@techserve.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>© 2023 تيك سيرف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script>
+        // القائمة المتنقلة
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // تأثير التمرير السلس للروابط
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // تأثير الظهور التدريجي للعناصر
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // مراقبة العناصر لإضافة تأثير الظهور
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-500');
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

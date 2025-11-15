@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - تيك سيرف</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <style>
+      
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <a href="index.html" class="flex items-center">
+                            <i class="fas fa-laptop-code text-2xl text-purple-600"></i>
+                            <span class="font-bold text-xl text-gray-800 mr-2">تيك سيرف</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">عن المتجر</a>
+                    <a href="shop.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="py-4 px-2 text-purple-600 font-semibold border-b-4 border-purple-600">المدونة</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">تواصل معنا</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-purple-50">الرئيسية</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-purple-50">عن المتجر</a>
+            <a href="shop.html" class="block py-2 px-4 text-sm hover:bg-purple-50">المتجر</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm text-purple-600 bg-purple-50">المدونة</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-purple-50">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">مدونة تيك سيرف</h1>
+            <p class="text-xl max-w-2xl mx-auto">آخر الأخبار والمقالات حول التقنية وتطوير الويب والتسويق الرقمي</p>
+        </div>
+    </section>
+
+    <!-- قسم المقالات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- المقال الرئيسي -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg blog-card border border-gray-100">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/31/10/55/technology-791029_1280.jpg" alt="مستقبل تطوير الويب" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 text-sm mb-4">
+                                <span class="bg-purple-100 text-purple-600 px-2 py-1 rounded-full mr-4">تطوير الويب</span>
+                                <span>15 أكتوبر 2023</span>
+                            </div>
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">مستقبل تطوير الويب: أهم التقنيات الناشئة في 2023</h2>
+                            <p class="text-gray-600 mb-4">يشهد عالم تطوير الويب تطورات سريعة ومثيرة مع ظهور تقنيات جديدة تهدف إلى تحسين تجربة المستخدم وأداء المواقع. في هذا المقال، نستعرض أهم التقنيات الناشئة التي ستشكل مستقبل تطوير الويب في العام القادم.</p>
+                            <a href="#" class="text-purple-600 font-semibold flex items-center">
+                                <span>اقرأ المزيد</span>
+                                <i class="fas fa-arrow-left mr-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- المقالات الجانبية -->
+                <div class="space-y-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">أحدث المقالات</h3>
+                    
+                    <!-- مقال جانبي 1 -->
+                    <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 flex">
+                        <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="أفضل إطارات العمل" class="w-24 h-24 object-cover rounded-lg mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">أفضل إطارات العمل لتطوير الويب في 2023</h4>
+                            <div class="flex items-center text-gray-500 text-xs mb-2">
+                                <span>12 أكتوبر 2023</span>
+                            </div>
+                            <a href="#" class="text-purple-600 text-sm font-semibold">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    
+                    <!-- مقال جانبي 2 -->
+                    <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 flex">
+                        <img src="https://cdn.pixabay.com/photo/2015/05/28/14/53/ux-787980_1280.jpg" alt="تصميم واجهات المستخدم" class="w-24 h-24 object-cover rounded-lg mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">أسس تصميم واجهات المستخدم الجذابة والفعالة</h4>
+                            <div class="flex items-center text-gray-500 text-xs mb-2">
+                                <span>8 أكتوبر 2023</span>
+                            </div>
+                            <a href="#" class="text-purple-600 text-sm font-semibold">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                    
+                    <!-- مقال جانبي 3 -->
+                    <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100 flex">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_1280.jpg" alt="تحسين محركات البحث" class="w-24 h-24 object-cover rounded-lg mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 mb-2">دليل شامل لتحسين محركات البحث (SEO) في 2023</h4>
+                            <div class="flex items-center text-gray-500 text-xs mb-2">
+                                <span>5 أكتوبر 2023</span>
+                            </div>
+                            <a href="#" class="text-purple-600 text-sm font-semibold">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم جميع المقالات -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">جميع المقالات</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">استكشف مكتبتنا الشاملة من المقالات التقنية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- مقال 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg blog-card border border-gray-100">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/19/15/32/laptop-1839876_1280.jpg" alt="أمن المعلومات" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-4">
+                            <span class="bg-red-100 text-red-600 px-2 py-1 rounded-full mr-4">الأمن السيبراني</span>
+                            <span>1 أكتوبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">أفضل ممارسات أمن المعلومات لحماية موقعك الإلكتروني</h3>
+                        <p class="text-gray-600 mb-4">في عصر التكنولوجيا المتقدمة، أصبح أمن المعلومات أحد أهم الأولويات لأي موقع إلكتروني. تعرف على أفضل الممارسات لحماية موقعك من الهجمات الإلكترونية.</p>
+                        <a href="#" class="text-purple-600 font-semibold flex items-center">
+                            <span>اقرأ المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg blog-card border border-gray-100">
+                    <img src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg" alt="استضافة الويب" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-2 py-1 rounded-full mr-4">استضافة الويب</span>
+                            <span>28 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">كيف تختار أفضل خدمة استضافة لموقعك الإلكتروني</h3>
+                        <p class="text-gray-600 mb-4">اختيار خدمة الاستضافة المناسبة لموقعك الإلكتروني هو قرار حاسم يؤثر على أداء موقعك ونجاحه. نقدم لك دليلاً شاملاً لاختيار أفضل خدمة استضافة.</p>
+                        <a href="#" class="text-purple-600 font-semibold flex items-center">
+                            <span>اقرأ المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- مقال 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg blog-card border border-gray-100">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="تجربة المستخدم" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-gray-500 text-sm mb-4">
+                            <span class="bg-green-100 text-green-600 px-2 py-1 rounded-full mr-4">تجربة المستخدم</span>
+                            <span>25 سبتمبر 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">10 نصائح لتحسين تجربة المستخدم في موقعك الإلكتروني</h3>
+                        <p class="text-gray-600 mb-4">تجربة المستخدم هي عامل حاسم في نجاح أي موقع إلكتروني. اكتشف أهم النصائح لتحسين تجربة المستخدم وزيادة تفاعل الزوار مع موقعك.</p>
+                        <a href="#" class="text-purple-600 font-semibold flex items-center">
+                            <span>اقرأ المزيد</span>
+                            <i class="fas fa-arrow-left mr-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- زر تحميل المزيد -->
+            <div class="text-center mt-12">
+                <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">عرض المزيد من المقالات</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم النشرة البريدية -->
+    <section class="py-16 bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">اشترك في نشرتنا البريدية</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">احصل على آخر المقالات والأخبار التقنية مباشرة في بريدك الإلكتروني</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="بريدك الإلكتروني" class="flex-grow py-3 px-4 rounded-l-lg text-gray-800 focus:outline-none">
+                <button class="bg-purple-700 hover:bg-purple-800 py-3 px-6 rounded-r-lg font-bold transition duration-300">اشترك</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
+                        <span class="font-bold text-xl mr-2">تيك سيرف</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نقدم حلولاً تقنية متكاملة لتطوير أعمالك في العصر الرقمي.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">عن المتجر</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition duration-300">المتجر</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطوير المواقع</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">المتاجر الإلكترونية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطبيقات الجوال</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">استضافة الويب</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التسويق الرقمي</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">اتصل بنا</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-2 text-purple-400"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-2 text-purple-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-2 text-purple-400"></i>
+                            <span>info@techserve.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>© 2023 تيك سيرف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script>
+        // القائمة المتنقلة
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

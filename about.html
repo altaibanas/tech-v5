@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن المتجر - تيك سيرف</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <style>
+      
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex items-center py-4">
+                        <a href="index.html" class="flex items-center">
+                            <i class="fas fa-laptop-code text-2xl text-purple-600"></i>
+                            <span class="font-bold text-xl text-gray-800 mr-2">تيك سيرف</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">الرئيسية</a>
+                    <a href="about.html" class="py-4 px-2 text-purple-600 font-semibold border-b-4 border-purple-600">عن المتجر</a>
+                    <a href="shop.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">المتجر</a>
+                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">المدونة</a>
+                    <a href="contact.html" class="py-4 px-2 text-gray-500 hover:text-purple-600 transition duration-300">تواصل معنا</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div class="hidden mobile-menu md:hidden bg-white">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-purple-50">الرئيسية</a>
+            <a href="about.html" class="block py-2 px-4 text-sm text-purple-600 bg-purple-50">عن المتجر</a>
+            <a href="shop.html" class="block py-2 px-4 text-sm hover:bg-purple-50">المتجر</a>
+            <a href="blog.html" class="block py-2 px-4 text-sm hover:bg-purple-50">المدونة</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-purple-50">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">عن تيك سيرف</h1>
+            <p class="text-xl max-w-2xl mx-auto">نحن شركة رائدة في مجال الحلول التقنية وتطوير الويب، نسعى دائمًا لتقديم أفضل الخدمات لعملائنا.</p>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">من نحن</h2>
+                    <p class="text-gray-600 mb-4">تيك سيرف هي شركة تقنية متخصصة في تقديم حلول الويب والتطبيقات الرقمية. تأسست عام 2018 بهدف مساعدة الشركات والأفراد على تحويل أفكارهم إلى واقع رقمي ملموس.</p>
+                    <p class="text-gray-600 mb-4">نحن نؤمن بأن التكنولوجيا يجب أن تكون في متناول الجميع، ونسعى جاهدين لتقديم حلول تقنية مبتكرة تلبي احتياجات عملائنا في العصر الرقمي.</p>
+                    <p class="text-gray-600">فريقنا مكون من مجموعة من المطورين والمصممين ذوي الخبرة الذين يعملون معًا لتحقيق رؤية عملائنا وتقديم منتجات عالية الجودة.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg" alt="فريق العمل" class="w-full max-w-lg rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم رؤيتنا ورسالتنا -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">رؤيتنا</h3>
+                    <p class="text-gray-600">أن نكون الشركة الرائدة في تقديم الحلول التقنية المتكاملة في المنطقة، وأن نساهم في تحويل المجتمع إلى مجتمع رقمي متكامل.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">رسالتنا</h3>
+                    <p class="text-gray-600">تقديم حلول تقنية مبتكرة وعالية الجودة تلبي احتياجات عملائنا، وتساعدهم على النمو والازدهار في العصر الرقمي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم قيمنا -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">قيمنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">القيم التي نؤمن بها ونسير عليها في جميع مشاريعنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">الابتكار</h3>
+                    <p class="text-gray-600">نبحث دائمًا عن أفكار جديدة وحلول مبتكرة لتطوير أعمال عملائنا.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">الجودة</h3>
+                    <p class="text-gray-600">نلتزم بأعلى معايير الجودة في جميع مشاريعنا وخدماتنا.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">الشراكة</h3>
+                    <p class="text-gray-600">نعمل كشريك حقيقي مع عملائنا لتحقيق أهدافهم وطموحاتهم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم فريق العمل -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">فريق العمل</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">فريقنا المكون من نخبة من المطورين والمصممين وخبراء التقنية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- عضو الفريق 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg team-card">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="أحمد محمد" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">أحمد محمد</h3>
+                        <p class="text-purple-600 mb-4">مدير التقنية</p>
+                        <p class="text-gray-600 text-sm">خبير في تطوير الويب والتطبيقات بخبرة تزيد عن 10 سنوات.</p>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg team-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" alt="فاطمة علي" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">فاطمة علي</h3>
+                        <p class="text-purple-600 mb-4">مصممة واجهات المستخدم</p>
+                        <p class="text-gray-600 text-sm">مصممة محترفة لواجهات المستخدم بتجربة تزيد عن 7 سنوات.</p>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg team-card">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593358_1280.jpg" alt="خالد إبراهيم" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">خالد إبراهيم</h3>
+                        <p class="text-purple-600 mb-4">مطور تطبيقات جوال</p>
+                        <p class="text-gray-600 text-sm">متخصص في تطوير تطبيقات iOS و Android بخبرة 8 سنوات.</p>
+                    </div>
+                </div>
+                
+                <!-- عضو الفريق 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg team-card">
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/30/entrepreneur-593371_1280.jpg" alt="سلمى عبدالله" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">سلمى عبدالله</h3>
+                        <p class="text-purple-600 mb-4">مديرة التسويق</p>
+                        <p class="text-gray-600 text-sm">خبيرة في التسويق الرقمي واستراتيجيات النمو.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-2xl text-purple-400"></i>
+                        <span class="font-bold text-xl mr-2">تيك سيرف</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نقدم حلولاً تقنية متكاملة لتطوير أعمالك في العصر الرقمي.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">عن المتجر</a></li>
+                        <li><a href="shop.html" class="text-gray-400 hover:text-white transition duration-300">المتجر</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition duration-300">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطوير المواقع</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">المتاجر الإلكترونية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">تطبيقات الجوال</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">استضافة الويب</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">التسويق الرقمي</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">اتصل بنا</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-2 text-purple-400"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-2 text-purple-400"></i>
+                            <span>+966 123 456 789</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-2 text-purple-400"></i>
+                            <span>info@techserve.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>© 2023 تيك سيرف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ملف JavaScript -->
+    <script>
+        // القائمة المتنقلة
+        const btn = document.querySelector(".mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

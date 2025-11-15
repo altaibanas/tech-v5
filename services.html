@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخدمات الفاخرة - تِك نوفا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-purple-900 text-white font-almari">
+    <!-- شريط التنقل الفاخر -->
+    <nav class="glass fixed w-full z-50 py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                    <i class="fas fa-crown text-white"></i>
+                </div>
+                <a href="index.html" class="text-2xl font-bold gradient-text">تِك نوفا</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 space-x-reverse">
+                <a href="index.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    الرئيسية
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="about.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    عن نوفا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="services.html" class="text-purple-300 font-medium relative group">
+                    الخدمات الفاخرة
+                    <span class="absolute bottom-0 right-0 w-full h-0.5 bg-gradient-to-r from-purple-500 to-pink-500"></span>
+                </a>
+                <a href="portfolio.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    إبداعاتنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+                <a href="contact.html" class="text-white font-medium hover:text-purple-300 transition-colors relative group">
+                    تواصل معنا
+                    <span class="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all group-hover:w-full"></span>
+                </a>
+            </div>
+            
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all hover:scale-105">
+                    طلب خدمة فاخرة
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- القائمة المتنقلة -->
+        <div id="mobile-menu" class="md:hidden glass mt-4 py-4 px-4 rounded-xl hidden">
+            <a href="index.html" class="block py-3 text-white border-b border-gray-700">الرئيسية</a>
+            <a href="about.html" class="block py-3 text-white border-b border-gray-700">عن نوفا</a>
+            <a href="services.html" class="block py-3 text-purple-300 border-b border-gray-700">الخدمات الفاخرة</a>
+            <a href="portfolio.html" class="block py-3 text-white border-b border-gray-700">إبداعاتنا</a>
+            <a href="contact.html" class="block py-3 text-white">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <!-- قسم الهيدر -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <div class="absolute inset-0 grid-pattern"></div>
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-10"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-medium text-purple-300">خدمات حصرية</span>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+                    <span class="gradient-text">خدماتنا الفاخرة</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    نقدم مجموعة حصرية من الخدمات التقنية المصممة للعملاء الذين يبحثون عن التميز والتفرد. كل خدمة نقدمها هي تجربة فاخرة بحد ذاتها.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات الرئيسية -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div class="relative">
+                    <div class="gradient-border rounded-2xl p-1">
+                        <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8">
+                            <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">البنية التحتية السحابية الفاخرة</h3>
+                            <p class="text-gray-300 mb-6">
+                                نحن نعيد تعريف مفهوم البنية التحتية السحابية. نقدم حلولاً مصممة خصيصًا توفر أداء استثنائي وأمان من الطراز الأول مع مرونة غير مسبوقة.
+                            </p>
+                            <ul class="text-gray-400 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-purple-400 ml-2 mt-1"></i>
+                                    <span>تصميم بنية تحتية سحابية حصرية</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-purple-400 ml-2 mt-1"></i>
+                                    <span>هجرة أنظمة متكاملة إلى السحابة</span>
+                                </li>
+                                <li class="fas fa-check text-purple-400 ml-2 mt-1"></i>
+                                    <span>إدارة وأتمتة البنية التحتية</span>
+                                </li>
+                            </ul>
+                            <button class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                                اكتشف المزيد
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- عناصر زخرفية -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full opacity-20 floating"></div>
+                </div>
+                
+                <div>
+                    <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-purple-300">خدمات سحابية</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-white mb-6">حلول سحابية استثنائية</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        نقدم حلول سحابية تتجاوز التوقعات التقليدية. نحن لا ننقل أنظمتك إلى السحابة فحسب، بل نصمم بيئة سحابية فاخرة تلبي احتياجاتك الحالية والمستقبلية.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-purple-500 to-pink-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-bolt text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">أداء استثنائي</h3>
+                                <p class="text-gray-400">بنية تحتية مصممة لتقديم أفضل أداء ممكن لتطبيقاتك وأنظمتك.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-blue-500 to-teal-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-shield-alt text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">أمان من الطراز الأول</h3>
+                                <p class="text-gray-400">طبقات أمنية متعددة تحمي بياناتك وأنظمتك من التهديدات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-blue-300">أمن سيبراني</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-white mb-6">حماية نخبوية لبياناتك</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        في عالم يتزايد فيه التهديدات الإلكترونية، نقدم حلول أمنية متطورة توفر حماية شاملة لبياناتك وأنظمتك. نحن لا نحمي بياناتك فحسب، بل نمنحك راحة البال.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-blue-500 to-teal-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-eye text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">مراقبة مستمرة</h3>
+                                <p class="text-gray-400">نراقب أنظمتك على مدار الساعة لاكتشاف التهديدات والاستجابة لها فورًا.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-green-500 to-emerald-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-user-shield text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">حماية متعددة المستويات</h3>
+                                <p class="text-gray-400">طبقات حماية متعددة تحمي بياناتك من مختلف أنواع التهديدات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="gradient-border rounded-2xl p-1">
+                        <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8">
+                            <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">الأمن السيبراني النخبوي</h3>
+                            <p class="text-gray-300 mb-6">
+                                نقدم حلول أمنية متكاملة تحمي بياناتك وأنظمتك من التهديدات الإلكترونية المتطورة. نحن لا نتفاعل مع التهديدات، بل نتوقعها ونمنعها.
+                            </p>
+                            <ul class="text-gray-400 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 ml-2 mt-1"></i>
+                                    <span>تقييم الثغرات الأمنية الشامل</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 ml-2 mt-1"></i>
+                                    <span>مراقبة أمنية مستمرة 24/7</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-blue-400 ml-2 mt-1"></i>
+                                    <span>استجابة فورية للتهديدات</span>
+                                </li>
+                            </ul>
+                            <button class="bg-gradient-to-r from-blue-600 to-teal-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                                اكتشف المزيد
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- عناصر زخرفية -->
+                    <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-gradient-to-r from-blue-500 to-teal-500 rounded-full opacity-20 floating" style="animation-delay: 1.5s;"></div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="gradient-border rounded-2xl p-1">
+                        <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8">
+                            <div class="w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mb-6 text-white text-2xl">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">الذكاء الاصطناعي الحصري</h3>
+                            <p class="text-gray-300 mb-6">
+                                نحول بياناتك إلى أصول استراتيجية باستخدام تقنيات الذكاء الاصطناعي المتطورة. نطور حلولاً ذكية تساعدك على اتخاذ قرارات أفضل وتحسين عملياتك.
+                            </p>
+                            <ul class="text-gray-400 space-y-2 mb-6">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                    <span>تحليلات بيانات متقدمة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                    <span>نماذج ذكاء اصطناعي مخصصة</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                    <span>توقعات وتحليلات تنبؤية</span>
+                                </li>
+                            </ul>
+                            <button class="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                                اكتشف المزيد
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- عناصر زخرفية -->
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full opacity-20 floating"></div>
+                </div>
+                
+                <div>
+                    <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-green-300">ذكاء اصطناعي</span>
+                    </div>
+                    <h2 class="text-4xl font-bold text-white mb-6">تحويل البيانات إلى رؤى</h2>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        نستخدم تقنيات الذكاء الاصطناعي المتطورة لتحويل بياناتك إلى رؤى قابلة للتنفيذ. نحن لا نقدم تقارير فحسب، بل نقدم حلولاً ذكية تحسن أداء عملك.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-green-500 to-emerald-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-chart-line text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">تحليلات متقدمة</h3>
+                                <p class="text-gray-400">نحلل بياناتك باستخدام خوارزميات متطورة لاكتشاف الأنماط والاتجاهات.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-yellow-500 to-orange-500 w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-robot text-white"></i>
+                            </div>
+                            <div class="mr-4">
+                                <h3 class="text-xl font-bold text-white mb-1">أتمتة ذكية</h3>
+                                <p class="text-gray-400">نطور حلول أتمتة ذكية توفر الوقت والجهد وتحسن الكفاءة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم باقات الخدمات -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-black to-purple-900/30"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block glass px-4 py-2 rounded-full mb-4">
+                    <span class="text-sm font-medium text-purple-300">باقات الخدمات</span>
+                </div>
+                <h2 class="text-4xl font-bold text-white mb-6">اختر الباقة التي تناسب تطلعاتك</h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">جميع الباقات تشمل دعم فاخر واستشارات متخصصة من فريق النخبة</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- باقة 1 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="inline-block bg-gradient-to-r from-gray-700 to-gray-800 px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-gray-300">الباقة الأساسية</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">نخبة مبتدئة</h3>
+                    <div class="text-4xl font-bold text-white mb-2">5,000 <span class="text-xl text-gray-400">ريال/شهر</span></div>
+                    <p class="text-gray-400 mb-6">مناسبة للشركات الصغيرة التي تبحث عن التميز</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>إدارة بنية تحتية أساسية</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>مراقبة أمنية أساسية</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>دعم فني خلال أوقات العمل</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-gray-600 ml-2 mt-1"></i>
+                            <span class="text-gray-600">تحليلات بيانات متقدمة</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times text-gray-600 ml-2 mt-1"></i>
+                            <span class="text-gray-600">دعم على مدار 24/7</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gray-700 text-white py-3 rounded-xl font-medium hover:bg-gray-600 transition-colors">
+                        اختر الباقة
+                    </button>
+                </div>
+                
+                <!-- باقة 2 -->
+                <div class="gradient-border rounded-2xl p-1 hover-lift relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">الأكثر طلباً</span>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-8 text-center h-full">
+                        <div class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded-full mb-6">
+                            <span class="text-sm font-medium text-white">الباقة المتميزة</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">نخبة متوسطة</h3>
+                        <div class="text-4xl font-bold text-white mb-2">12,000 <span class="text-xl text-gray-400">ريال/شهر</span></div>
+                        <p class="text-gray-400 mb-6">مناسبة للشركات المتوسطة التي تبحث عن التفرد</p>
+                        
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                <span>إدارة بنية تحتية متقدمة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                <span>مراقبة أمنية متقدمة 24/7</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                <span>دعم فني على مدار الساعة</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                                <span>تحليلات بيانات أساسية</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-gray-600 ml-2 mt-1"></i>
+                                <span class="text-gray-600">ذكاء اصطناعي متقدم</span>
+                            </li>
+                        </ul>
+                        
+                        <button class="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                            اختر الباقة
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- باقة 3 -->
+                <div class="glass rounded-2xl p-8 text-center hover-lift">
+                    <div class="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium text-white">الباقة الحصرية</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">نخبة متقدمة</h3>
+                    <div class="text-4xl font-bold text-white mb-2">25,000 <span class="text-xl text-gray-400">ريال/شهر</span></div>
+                    <p class="text-gray-400 mb-6">مناسبة للشركات الكبيرة التي تبحث عن التميز المطلق</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>إدارة بنية تحتية شاملة</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>نظام أمني متكامل ومتقدم</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>دعم فني مخصص 24/7</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>تحليلات بيانات متقدمة</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 ml-2 mt-1"></i>
+                            <span>حلول ذكاء اصطناعي متكاملة</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gradient-to-r from-yellow-600 to-orange-600 text-white py-3 rounded-xl font-medium hover:shadow-lg transition-all">
+                        اختر الباقة
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-pink-900/40"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">هل أنت مستعد لتجربة الخدمات الفاخرة؟</h2>
+                <p class="text-xl mb-8 text-gray-300">اتصل بنا اليوم لمناقشة احتياجاتك والحصول على استشارة مجانية</p>
+                <a href="contact.html" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:scale-105 inline-flex items-center">
+                    <span>تواصل معنا</span>
+                    <i class="fas fa-arrow-left mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر الفاخر -->
+    <footer class="glass border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-sm"></i>
+                        </div>
+                        <div class="text-xl font-bold gradient-text">تِك نوفا</div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">شركة رائدة في تقديم حلول تقنية معلومات فاخرة وحصرية للعملاء المميزين.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">روابط سريعة</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-purple-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-purple-400 transition-colors">عن نوفا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الخدمات الفاخرة</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-purple-400 transition-colors">إبداعاتنا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">خدماتنا</h3>
+                    <ul class="space-y-3">
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">البنية التحتية السحابية</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الأمن السيبراني النخبوي</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الذكاء الاصطناعي الحصري</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-purple-400 transition-colors">الدعم الفاخر</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4">اتصل بنا</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt ml-3 text-purple-400"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone ml-3 text-purple-400"></i>
+                            +966 12 345 6789
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope ml-3 text-purple-400"></i>
+                            elite@technova.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 تِك نوفا. جميع الحقوق محفوظة. | تصميم حصري وفاخر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // التحكم في القائمة المتنقلة
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تأثيرات التمرير
+            const fadeElements = document.querySelectorAll('.hover-lift');
+            
+            const appearOnScroll = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s, transform 0.6s';
+                appearOnScroll.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
